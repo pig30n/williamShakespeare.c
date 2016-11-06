@@ -1,0 +1,36 @@
+              williamShakespeare.c
+              make hamlet enter act3 scene1
+
+The program is a homage on William Shakespeares tragedy Hamlet. When
+Hamlet enters the stage in act 3 scene 1 he starts with the opening line
+
+              To be, or not to be, that is the question:
+              Whether 'tis Nobler in the mind to suffer
+              The Slings and Arrows of outrageous Fortune,
+              Or to take Arms against a Sea of troubles,
+              And by opposing end them: to die, to sleep'
+
+So basically he asks himself if its better to struggle with live or end it all and die.
+But Hamlet doesnt know if its better to die, since nobody knows what comes after death.
+In analogy the program asks the question and returns the result. We see that the
+condition "to be or not to be" is a tautology and always returns true.
+
+              return 0x2B || !0x2B ? 0x00: 0x01;
+
+So when we execute the build and run process with
+
+              make hamlet enter act3 scene1
+
+we invoke the c compiler to compile "williamShakespeare.c" into the executable "hamlet"
+and run the program. The output this process produces should be something like this.
+
+              [enter hamlet]
+              The answer to this question is 0
+
+There we have it. Our long-awaited answer to the question: to be or not to be? But what
+happened with the executable hamlet? Its gone!
+
+A way to interpret it. Hamlet had no choice but return 0x00. What we didnt know at this
+time is, that when hamlet returns 0x00 the makefile removes hamlet. Hence he is dead
+and gone. If hamlet would have returned something else, the make process would have stoped
+with an error message. But at least we know that hamlet is gone with an EXIT_SUCCESS.
