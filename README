@@ -10,7 +10,7 @@ Hamlet enters the stage in act 3 scene 1 he starts with the opening line
               Or to take Arms against a Sea of troubles,
               And by opposing end them: to die, to sleep'
 
-So basically he asks himself if its better to struggle with live or end it all and die.
+So basically he asks himself if its better to struggle with life or end it all and die.
 But Hamlet doesnt know if its better to die, since nobody knows what comes after death.
 In analogy the program asks the question and returns the result. We see that the
 condition "to be or not to be" is a tautology and always returns true.
